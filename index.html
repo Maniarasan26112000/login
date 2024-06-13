@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="free.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+</head>
+<body>
+  	<div class="container" id="container">
+  		<div class="form-container sign-up-container">
+  			<form class="null" action="#">
+  				<h1>Creat Account</h1>					
+  				<div class="social-container">
+  					<a href="a" class="social"><i class="fa-brands fa-facebook"></i></a>
+  					<a href="a" class="social"><i class="fa-brands fa-google"></i></a>
+  					<a href="a" class="social"><i class="fa-brands fa-linkedin-in"></i></a>
+  				</div>
+  				<span>or use your email for registration</span>
+  				<input type="text" name="" placeholder="name">
+  				<input type="email" name="" placeholder="email">
+  				<input type="password" name="" placeholder="password">
+  				<button>Sign Up</button>
+  			</form>
+  		</div>
+  		<div class="form-container sign-in-container">
+  			<form class="null" action="#">
+  				<h1>Sign in</h1>					
+  				<div class="social-container">
+  					<a href="a" class="social"><i class="fa-brands fa-facebook"></i></a>
+  					<a href="a" class="social"><i class="fa-brands fa-google"></i></a>
+  					<a href="a" class="social"><i class="fa-brands fa-linkedin-in"></i></a>
+  				</div>
+  				<span>or use your Account</span>
+  				
+  				<input type="email" name="" placeholder="email">
+  				<input type="password" name="" placeholder="password">
+  				<button>Sign Up</button>
+  			</form>
+  		</div>
+  		<div class="overlay-container">
+  			<div class="overlay">
+  				<div class="overlay-panel overlay-left">
+  					<h1>Hey Everyone!!!</h1>
+  					<p>Colorfull Web Page</p>
+  					<button class="press" id="signIn">Sign in</button>
+  				</div>
+  				<div class="overlay-panel overlay-right">
+  					<h1>Creat Please</h1>
+  					<p>Web developer</p>
+  					<button class="press" id="signUp">Sign in</button>
+  				</div>
+  				
+  		    </div>
+  			
+  		</div>
+  	</div>
+  	<script>
+const signUpButton =document.getElementById("signUp")
+const signInButton =document.getElementById("signIn")
+const container =document.getElementById("container")
+
+signUpButton.addEventListener('click',()=>{
+	container.classList.add("right-panel-active");
+})
+
+
+signInButton.addEventListener('click',()=>{
+	container.classList.remove("right-panel-active");
+})
+
+  	</script>
+</body>
+</html>
